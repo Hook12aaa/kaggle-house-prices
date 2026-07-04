@@ -1,6 +1,6 @@
 # Kaggle House Prices -- Advanced Regression
 
-This is an autonomous run of my [auto-model-trainer](https://github.com/Hook12aaa/auto-model-trainer) plugin on the House Prices competition. I handed it the objective file and let it explore on its own -- 9 experiments across 4 architecture classes (linear, neighbors, svm, tree_based). It converged on a Caruana ensemble blending Lasso, GBR, KernelRidge, and LightGBM as the winner.
+This solution was created by [auto-model-trainer](https://github.com/Hook12aaa/auto-model-trainer), a Claude Code plugin for autonomous ML training. Given the House Prices competition objective, it ran 9 experiments across 4 architecture classes (linear, neighbors, svm, tree_based) and converged on a Caruana ensemble blending Lasso, GBR, KernelRidge, and LightGBM as the winner.
 
 ## Competition
 - **Task:** Regression -- predict `SalePrice` for residential homes in Ames, Iowa.
@@ -30,7 +30,7 @@ The ensemble weights: Lasso 40.9%, GBR 34.1%, KernelRidge 15.9%, LightGBM 9.1%.
 
 ## Project Structure
 ```
-objective.yaml                    # the goal I handed the trainer
+objective.yaml                    # competition objective given to auto-model-trainer
 final-report.md                   # what it tried, what won, and why
 submission.csv                    # winner's predictions on the test set
 .auto-trainer/
