@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_000_baseline",
+  "arch_class": "linear",
+  "cv_rmse": 0.12331832411719511,
+  "fold_rmse": [
+    0.12238721995359042,
+    0.12866685219363783,
+    0.12080379860782145,
+    0.12628679732606807,
+    0.11816144927110173
+  ],
+  "fold_rmse_std": 0.003773206462308656,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": true,
+  "n_train": 1456,
+  "notes": "baseline: Ridge(alpha=10) on standardized design matrix"
+}

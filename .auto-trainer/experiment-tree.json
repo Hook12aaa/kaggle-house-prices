@@ -1,0 +1,131 @@
+{
+  "objective": "minimize log-space RMSE of log1p(SalePrice)",
+  "baseline_cv_rmse": 0.12331832411719511,
+  "n_experiments": 9,
+  "architecture_classes": [
+    "linear",
+    "neighbors",
+    "svm",
+    "tree_based"
+  ],
+  "n_classes": 4,
+  "experiments": [
+    {
+      "experiment": "exp_001_lasso",
+      "arch_class": "linear",
+      "cv_rmse": 0.1099841047484227,
+      "fold_rmse_std": 0.0063265992802247215,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_005_gbr",
+      "arch_class": "tree_based",
+      "cv_rmse": 0.110333854111184,
+      "fold_rmse_std": 0.007192272937620006,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_002_elasticnet",
+      "arch_class": "linear",
+      "cv_rmse": 0.1103539189656177,
+      "fold_rmse_std": 0.006304477094289258,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_003_xgboost",
+      "arch_class": "tree_based",
+      "cv_rmse": 0.11332081257784421,
+      "fold_rmse_std": 0.0083377607495067,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_007_kernelridge",
+      "arch_class": "svm",
+      "cv_rmse": 0.11544302561274798,
+      "fold_rmse_std": 0.007407501408388947,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_004_lightgbm",
+      "arch_class": "tree_based",
+      "cv_rmse": 0.11699320556030512,
+      "fold_rmse_std": 0.009990604794228006,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_000_baseline",
+      "arch_class": "linear",
+      "cv_rmse": 0.12331832411719511,
+      "fold_rmse_std": 0.003773206462308656,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": true
+    },
+    {
+      "experiment": "exp_008_knn",
+      "arch_class": "neighbors",
+      "cv_rmse": 0.16103095729501002,
+      "fold_rmse_std": 0.019062716423974915,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": false
+    },
+    {
+      "experiment": "exp_006_svr",
+      "arch_class": "svm",
+      "cv_rmse": 0.16989213042005744,
+      "fold_rmse_std": 0.022085240285531795,
+      "n_features": 276,
+      "status": "ACCEPT",
+      "beats_baseline": false
+    }
+  ],
+  "validation_problems": [],
+  "global_status": "CONVERGED",
+  "convergence": {
+    "tier1_within_class": {
+      "linear": {
+        "n_variants": 3,
+        "best": 0.1099841047484227,
+        "exhausted": true,
+        "reason": "multiple_variants"
+      },
+      "tree_based": {
+        "n_variants": 3,
+        "best": 0.110333854111184,
+        "exhausted": true,
+        "reason": "multiple_variants"
+      },
+      "svm": {
+        "n_variants": 2,
+        "best": 0.11544302561274798,
+        "exhausted": true,
+        "reason": "multiple_variants"
+      },
+      "neighbors": {
+        "n_variants": 1,
+        "best": 0.16103095729501002,
+        "exhausted": true,
+        "reason": "non_competitive(+46%)"
+      }
+    },
+    "tier2_coverage": {
+      "n_classes": 4,
+      "min_required": 3,
+      "satisfied": true
+    },
+    "global_best_cv_rmse": 0.1099841047484227
+  }
+}

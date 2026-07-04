@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_007_kernelridge",
+  "arch_class": "svm",
+  "cv_rmse": 0.11544302561274798,
+  "fold_rmse": [
+    0.11622634444880284,
+    0.12371320341683424,
+    0.1176562941965273,
+    0.11705951806685581,
+    0.10136756396311995
+  ],
+  "fold_rmse_std": 0.007407501408388947,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": true,
+  "n_train": 1456,
+  "notes": "KernelRidge polynomial degree2 alpha0.5"
+}

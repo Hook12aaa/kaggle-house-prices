@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_006_svr",
+  "arch_class": "svm",
+  "cv_rmse": 0.16989213042005744,
+  "fold_rmse": [
+    0.18241480193402337,
+    0.16206792237298634,
+    0.14572689100642966,
+    0.2040411826339565,
+    0.14795680648815068
+  ],
+  "fold_rmse_std": 0.022085240285531795,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": true,
+  "n_train": 1456,
+  "notes": "SVR rbf C20 eps0.01 on standardized matrix"
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_004_lightgbm",
+  "arch_class": "tree_based",
+  "cv_rmse": 0.11699320556030512,
+  "fold_rmse": [
+    0.1257077811283153,
+    0.11208811667230785,
+    0.12321578674796299,
+    0.12286935478599065,
+    0.09891704598465599
+  ],
+  "fold_rmse_std": 0.009990604794228006,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": false,
+  "n_train": 1456,
+  "notes": "LightGBM num_leaves15 lr0.02 n2000"
+}

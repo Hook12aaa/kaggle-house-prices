@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_005_gbr",
+  "arch_class": "tree_based",
+  "cv_rmse": 0.110333854111184,
+  "fold_rmse": [
+    0.11772417442170534,
+    0.1068139986535465,
+    0.11712985202395891,
+    0.11053829336117674,
+    0.09826330394091683
+  ],
+  "fold_rmse_std": 0.007192272937620006,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": false,
+  "n_train": 1456,
+  "notes": "sklearn GradientBoosting depth3 lr0.02 n1500"
+}

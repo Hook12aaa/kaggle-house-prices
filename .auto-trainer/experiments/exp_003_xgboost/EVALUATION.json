@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_003_xgboost",
+  "arch_class": "tree_based",
+  "cv_rmse": 0.11332081257784421,
+  "fold_rmse": [
+    0.12136843016982458,
+    0.11030637833111069,
+    0.12222915102627493,
+    0.11167739051402965,
+    0.09945825566693914
+  ],
+  "fold_rmse_std": 0.0083377607495067,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": false,
+  "n_train": 1456,
+  "notes": "XGBoost depth3 lr0.02 n2000 subsample0.7 colsample0.4"
+}

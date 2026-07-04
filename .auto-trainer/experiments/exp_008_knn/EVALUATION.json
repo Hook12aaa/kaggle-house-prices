@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_008_knn",
+  "arch_class": "neighbors",
+  "cv_rmse": 0.16103095729501002,
+  "fold_rmse": [
+    0.16860949828283428,
+    0.1610273591558054,
+    0.14682943069188661,
+    0.18946300413610462,
+    0.13353717166835963
+  ],
+  "fold_rmse_std": 0.019062716423974915,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": true,
+  "n_train": 1456,
+  "notes": "KNN k10 distance-weighted manhattan"
+}

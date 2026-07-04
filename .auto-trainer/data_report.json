@@ -1,0 +1,55 @@
+{
+  "stage": "data-validate",
+  "overall": "PASS_WITH_CONCERNS",
+  "n_train": 1460,
+  "n_test": 1459,
+  "n_features": 79,
+  "target": "SalePrice",
+  "id_column": "Id",
+  "checks": [
+    {
+      "check": "shape",
+      "status": "PASS",
+      "detail": "train=(1460, 81), test=(1459, 80)"
+    },
+    {
+      "check": "target_presence",
+      "status": "PASS",
+      "detail": "SalePrice in train=True, in test=True"
+    },
+    {
+      "check": "target_validity",
+      "status": "PASS",
+      "detail": "nulls=0, non_positive=0, min=34900, max=755000"
+    },
+    {
+      "check": "id_integrity",
+      "status": "PASS",
+      "detail": "train_dups=0, test_dups=0"
+    },
+    {
+      "check": "schema_alignment",
+      "status": "PASS",
+      "detail": "missing_in_test=[], extra_in_test=[]"
+    },
+    {
+      "check": "missingness",
+      "status": "PASS_WITH_CONCERNS",
+      "detail": "cols_with_any_missing=34, >50%_missing={'PoolQC': 0.997, 'MiscFeature': 0.964, 'Alley': 0.932, 'Fence': 0.804, 'MasVnrType': 0.605}"
+    },
+    {
+      "check": "duplicate_rows",
+      "status": "PASS",
+      "detail": "feature_identical_train_rows=0"
+    },
+    {
+      "check": "outliers",
+      "status": "PASS_WITH_CONCERNS",
+      "detail": "GrLivArea>4000 rows=4 (mitigation: drop_outliers flag in lib.common); target_skew=1.883 -> log1p applied downstream"
+    }
+  ],
+  "mitigations": {
+    "log1p_target": true,
+    "drop_outliers_GrLivArea_gt_4000": true
+  }
+}

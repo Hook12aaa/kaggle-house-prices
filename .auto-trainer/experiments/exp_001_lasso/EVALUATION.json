@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_001_lasso",
+  "arch_class": "linear",
+  "cv_rmse": 0.1099841047484227,
+  "fold_rmse": [
+    0.11257510595671297,
+    0.1111982550836968,
+    0.11714361364696445,
+    0.10996797130298587,
+    0.09811599014321744
+  ],
+  "fold_rmse_std": 0.0063265992802247215,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": true,
+  "n_train": 1456,
+  "notes": "LassoCV over logspace(-4,-1) on standardized matrix"
+}

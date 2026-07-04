@@ -1,0 +1,18 @@
+{
+  "experiment": "exp_002_elasticnet",
+  "arch_class": "linear",
+  "cv_rmse": 0.1103539189656177,
+  "fold_rmse": [
+    0.11341724464769636,
+    0.1111639488512741,
+    0.11714361364696445,
+    0.11072150959929995,
+    0.09841142071168685
+  ],
+  "fold_rmse_std": 0.006304477094289258,
+  "n_features": 276,
+  "drop_outliers": true,
+  "needs_scaling": true,
+  "n_train": 1456,
+  "notes": "ElasticNetCV grid over l1_ratio x alpha on standardized matrix"
+}

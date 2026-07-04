@@ -1,0 +1,15 @@
+dataset:
+  train: ./train.csv
+  test: ./test.csv
+  target_column: SalePrice
+
+competition:
+  metric: rmse
+  metric_direction: minimize
+  submission_format:
+    id_column: Id
+    prediction_column: SalePrice
+
+constraints:
+  max_iterations: 15
+  architecture_classes_minimum: 3
